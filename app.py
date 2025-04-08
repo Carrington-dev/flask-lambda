@@ -3,7 +3,6 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-app = Flask(__name__)
 logging.basicConfig()
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
