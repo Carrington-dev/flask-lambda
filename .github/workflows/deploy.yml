@@ -37,4 +37,6 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy to AWS Lambda
-        run: sls deploy --stage dev
+        run: |
+          sls login
+          sls deploy --stage dev
